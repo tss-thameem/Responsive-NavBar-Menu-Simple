@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #399cdf;
+    color:whitesmoke;
+
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.nav-links{
+    display:flex;
+    justify-content:flex-end;
+    list-style: none; 
+    width: 75%;
+
+}
+.home,
+.skills,
+.contact,
+.about,
+.signup{
+         text-decoration: none;
+         color:whitesmoke;
+         font-size: 20px;
+         padding: 10px 20px;
+         margin:0 10px;
+         cursor: pointer;
+}
+
+.signup{
+    border: 1px solid rgb(223, 86, 23);
+    border-radius: 50px;
+
+}
+.mobile-menu-icon{
+    display:none;
+}
+@media screen and (max-width:780px) {
+    .logo{
+        display:flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile {
+        position: absolute;
+        display:block;
+        list-style: none;
+        background-color:rgb(158, 30, 30);
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .home,
+    .skills,
+    .about,
+    .contact,
+    .signup{
+        color: whitesmoke;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .signup{
+      border:none
+    }
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: whitesmoke;
+        background-color:rgb(25, 140, 216);
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+}
+
